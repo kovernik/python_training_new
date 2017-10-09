@@ -4,10 +4,8 @@ from fixture.group import GroupHelper
 from fixture.contact import ContactHelper
 
 class Application:
-
     def __init__(self):
-        self.wd = WebDriver(capabilities={"marionette": False},
-                            firefox_binary="C:/Program Files/Mozilla Firefox/firefox.exe")
+        self.wd = WebDriver(capabilities={"marionette": False})
         self.session = SessionHelper(self)
         self.group = GroupHelper(self)
         self.contact = ContactHelper(self)
@@ -20,9 +18,9 @@ class Application:
             return False
 
     def open_homepage(self):
-        # open homepage
         wd = self.wd
-        wd.get("http://localhost/addressbook/")
+        if not wd.current_url.endswith("addressbook/"):
+            wd.get("http://localhost/addressbook/")
 
     def destroy(self):
         self.wd.quit()

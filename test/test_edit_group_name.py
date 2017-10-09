@@ -15,5 +15,7 @@ def test_edit_group_name(app):
     old_groups[index] = group
     assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)
 
-#def test_edit_group_header(app):
-   #app.group.edit(Group(header="New header"))
+
+
+
+

@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
+
 from model.group import Group
 from random import randrange
-
 
 def test_any_group(app):
     if app.group.count() == 0:

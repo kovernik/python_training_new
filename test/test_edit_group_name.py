@@ -1,10 +1,10 @@
-# -*- coding: utf-8 -*-
 from model.group import Group
 from random import randrange
 
+
 def test_edit_group_name(app):
     if app.group.count() == 0:
-        app.group.create(Group(name="Test"))
+        app.group.create(Group(name="New_group"))
     old_groups = app.group.get_group_list()
     index = randrange(len(old_groups))
     group = Group(name="New name")

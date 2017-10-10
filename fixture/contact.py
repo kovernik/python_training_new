@@ -1,7 +1,7 @@
 from model.contact import Contact
 
-class ContactHelper:
 
+class ContactHelper:
     def __init__(self, app):
         self.app = app
 
@@ -16,7 +16,8 @@ class ContactHelper:
 
     def return_home(self):
         wd = self.app.wd
-        if not wd.current_url.endswith("addressbook/"):
+        if not (wd.current_url == "http://localhost/addressbook/" and len(
+                wd.find_elements_by_xpath("//input[@value='Delete']"))):
             wd.find_element_by_link_text("home").click()
 
     def edit_first_contact(self):
@@ -74,7 +75,7 @@ class ContactHelper:
         self.return_home()
         self.contact_cache = None
 
-    def count (self):
+    def count(self):
         wd = self.app.wd
         return len(wd.find_elements_by_name("selected[]"))
 
@@ -91,5 +92,3 @@ class ContactHelper:
                 firstname = cells[2].text
                 self.contact_cache.append(Contact(id=id, lastname=lastname, firstname=firstname))
         return list(self.contact_cache)
-
-

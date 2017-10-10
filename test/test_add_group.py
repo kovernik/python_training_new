@@ -1,10 +1,9 @@
-# -*- coding: utf-8 -*-
-
 from model.group import Group
+
 
 def test_add_group(app):
         old_groups = app.group.get_group_list()
-        group = Group(name="Test", header="Welcome", footer="Goodbye")
+        group = Group(name="name", header="header", footer="footer")
         app.group.create(group)
         assert len(old_groups) + 1 == app.group.count()
         new_groups = app.group.get_group_list()

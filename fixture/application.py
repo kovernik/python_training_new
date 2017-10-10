@@ -3,6 +3,7 @@ from fixture.session import SessionHelper
 from fixture.group import GroupHelper
 from fixture.contact import ContactHelper
 
+
 class Application:
     def __init__(self):
         self.wd = WebDriver(capabilities={"marionette": False})
@@ -19,7 +20,8 @@ class Application:
 
     def open_homepage(self):
         wd = self.wd
-        if not wd.current_url.endswith("addressbook/"):
+        if not (wd.current_url == "http://localhost/addressbook/" and len(
+                wd.find_elements_by_xpath("//input[@value='Delete']"))):
             wd.get("http://localhost/addressbook/")
 
     def destroy(self):

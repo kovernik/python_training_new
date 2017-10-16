@@ -2,7 +2,7 @@ from model.group import Group
 from random import randrange
 
 
-def test_any_group(app):
+def test_delete_any_group(app):
     if app.group.count() == 0:
         app.group.create(Group(name="New"))
     old_groups = app.group.get_group_list()

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
   {
     "py/object": "model.group.Group",
@@ -76,4 +77,84 @@
     "id": null,
     "name": "nameU (7PvX9:"
   }
+=======
+[
+  {
+    "py/object": "model.group.Group",
+    "footer": "",
+    "header": "",
+    "id": null,
+    "name": ""
+  },
+  {
+    "py/object": "model.group.Group",
+    "footer": "footer XV |=",
+    "header": "header&7Ui UG E",
+    "id": null,
+    "name": "name^F7GO`Y9"
+  },
+  {
+    "py/object": "model.group.Group",
+    "footer": "footer./) .Y5#pX~",
+    "header": "headerSIlS g nY4$rJ",
+    "id": null,
+    "name": "namezG(OT"
+  },
+  {
+    "py/object": "model.group.Group",
+    "footer": "footerkqO-VV ",
+    "header": "headerGcB4y!J!Db&Cjn",
+    "id": null,
+    "name": "name3iH$QLbIj"
+  },
+  {
+    "py/object": "model.group.Group",
+    "footer": "footerG <Si\\ W&Y 8XS0+,",
+    "header": "headerFQ*W>`rL4ViF.O",
+    "id": null,
+    "name": "name <"
+  },
+  {
+    "py/object": "model.group.Group",
+    "footer": "footerI 0xe1nut=U[0awFqh",
+    "header": "header e:O,p4 lh0 ",
+    "id": null,
+    "name": "namek8mrPR%"
+  },
+  {
+    "py/object": "model.group.Group",
+    "footer": "footer <_  q6?s]9 R_^ DK",
+    "header": "headerVR6;C>Ocjk",
+    "id": null,
+    "name": "name<\"/ ~S "
+  },
+  {
+    "py/object": "model.group.Group",
+    "footer": "footerSfEN]P (sCO ",
+    "header": "headerp4XA yK",
+    "id": null,
+    "name": "name ba"
+  },
+  {
+    "py/object": "model.group.Group",
+    "footer": "footerw<_Y7IT.P41# OC0y7",
+    "header": "headerBx:r3Q K+ 20'  O",
+    "id": null,
+    "name": "nameac["
+  },
+  {
+    "py/object": "model.group.Group",
+    "footer": "footerMK:y lzIz]V\\m{gm",
+    "header": "header6ac 3s' ~%sRMn;",
+    "id": null,
+    "name": "name_,C "
+  },
+  {
+    "py/object": "model.group.Group",
+    "footer": "footer 9m6H* G]#f",
+    "header": "header{f",
+    "id": null,
+    "name": "nameU (7PvX9:"
+  }
+>>>>>>> c700b9504d602a9735d9791a0b69084b0d72be79
 ]

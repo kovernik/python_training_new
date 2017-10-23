@@ -1,4 +1,5 @@
 from model.group import Group
+from model.contact import Contact
 
 
 def test_group_list(app, db):

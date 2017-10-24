@@ -4,7 +4,6 @@ from model.contact import Contact
 
 
 class DbFixture:
-
     def __init__(self, host, name, user, password):
         self.host = host
         self.name = name
@@ -25,14 +24,15 @@ class DbFixture:
             cursor.close()
         return list
 
-    def get_contact_list(self):
+    def get_contact_list_db(self):
         list = []
         cursor = self.connection.cursor()
         try:
-            cursor.execute("select id, firstname, lastname from addressbook where deprecated='0000-00-00 00:00:00'")
+            cursor.execute(
+                "select id, firstname, lastname, email, address from addressbook where deprecated='0000-00-00 00:00:00'")
             for row in cursor:
-                (id, firstname, lastname) = row
-                list.append(Contact(id=str(id), firstname=firstname, lastname=lastname))
+                (id, firstname, lastname, email, address) = row
+                list.append(Contact(id=str(id), firstname=firstname, lastname=lastname, email=email, address=address))
         finally:
             cursor.close()
         return list

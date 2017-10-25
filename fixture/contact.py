@@ -157,3 +157,4 @@ class ContactHelper:
         fax = re.search("F: (.*)", text).group(1)
         return Contact(homephone=homephone, workphone=workphone,
                        mobilephone=mobilephone, secondaryphone=secondaryphone, fax=fax)
+

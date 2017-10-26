@@ -25,11 +25,10 @@ class ContactHelper:
         wd = self.app.wd
         self.select_contact_by_index(0)
 
-    def edit_contact_by_index(self, index, new_contact_data):
+    def edit_contact_by_index(self, id, new_contact_data):
         wd = self.app.wd
         self.app.open_home_page()
-        self.select_contact_by_index(index)
-        wd.find_elements_by_css_selector('img[alt="Edit"]')[index].click()
+        wd.find_element_by_css_selector("a[href='edit.php?id=%s']" % id).click()
         self.fill_contact_form(new_contact_data)
         wd.find_element_by_name("update").click()
         self.return_to_home_page()
@@ -158,3 +157,4 @@ class ContactHelper:
         fax = re.search("F: (.*)", text).group(1)
         return Contact(homephone=homephone, workphone=workphone,
                        mobilephone=mobilephone, secondaryphone=secondaryphone, fax=fax)
+

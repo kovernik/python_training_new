@@ -1,5 +1,9 @@
 from model.contact import Contact
+from model.group import Group
+from fixture.orm import ORMFixture
 import random
+
+db = ORMFixture(host='127.0.0.1', name='addressbook', user='root', password='')
 
 
 def test_delete_any_contact(app, db, check_ui):
@@ -8,10 +12,17 @@ def test_delete_any_contact(app, db, check_ui):
             Contact(firstname="Name", lastname="Last name", email="kovernik@softbalance.ru", mobilephone="+79110000000",
                     homephone="+78120001110", company="SoftBalance", address="Shaumyana, 55", middle="Middle",
                     nickname="nickname"))
+    if len(db.get_group_list()) == 0:
+        app.group.create(Group(name="Test"))
     old_contacts = db.get_contact_list()
+    old_groups = db.get_group_list()
     contact = random.choice(old_contacts)
+    group = random.choice(old_groups)
+    if len(db.get_contacts_in_group(Group(id='%s' % group))) == 0:
+        app.contact.add_contact_to_group(contact, group)
+    old_contacts = db.get_contacts_in_group(Group(id='%s' % group))
     app.contact.delete_contact_by_id(contact.id)
-    new_contacts = db.get_contact_list()
+    new_contacts = db.get_contacts_in_group(Group(id='%s' % group))
     assert len(old_contacts) - 1 == len(new_contacts)
     old_contacts.remove(contact)
     assert old_contacts == new_contacts

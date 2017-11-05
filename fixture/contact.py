@@ -27,6 +27,47 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_element_by_css_selector("input[value='%s']" % str(contact.id)).click()
 
+    def add_contact_in_group(self, contact, group):
+        wd = self.app.wd
+        self.app.open_home_page()
+        self.select_contact_by_id(contact.id)
+        wd.find_element_by_xpath("//div[@class='right']/select//option[@value='%s']" % group.id).click()
+        wd.find_element_by_name("add").click()
+        self.return_to_home_page()
+
+    def delete_contact_in_group(self, contact, group):
+        wd = self.app.wd
+        self.app.open_home_page()
+        wd.find_element_by_xpath("//form[@id='right']/select//option[@value='%s']" % group.id).click()
+        self.select_contact_by_id(contact.id)
+        wd.find_element_by_xpath("//*[@value='Delete']").click()
+        wd.switch_to_alert().accept()
+        self.contact_cache = None
+        self.return_to_home_page()
+
+    def select_group_to_add_by_id(self, group_id):
+        wd = self.app.wd
+        wd.find_element_by_xpath("//select[@name='to_group']/option[@value='%s']" % group_id).click()
+
+    def select_group_to_see_by_id(self, group_id):
+        wd = self.app.wd
+        wd.find_element_by_xpath("//select[@name='group']/option[@value='%s']" % group_id).click()
+
+    def delete_contact_from_group_by_id(self, contact_id, group_id):
+        wd = self.app.wd
+        self.app.open_home_page()
+        self.select_group_to_see_by_id(group_id)
+        self.select_contact_by_id(contact_id)
+        wd.find_element_by_xpath("//input[@name='remove']").click()
+
+    def add_contact_to_group_by_id(self, contact_id, group_id):
+        wd = self.app.wd
+        self.app.open_home_page()
+        self.select_contact_by_id(contact_id)
+        self.select_group_to_add_by_id(group_id)
+        wd.find_element_by_xpath("//input[@value='Add to']").click()
+        wd.find_element_by_xpath("//a[@href=contains(text(),'group page')]").click()
+
     def return_to_home_page(self):
         wd = self.app.wd
         if not (wd.current_url == "http://localhost/addressbook/" and len(
@@ -169,4 +210,3 @@ class ContactHelper:
         fax = re.search("F: (.*)", text).group(1)
         return Contact(homephone=homephone, workphone=workphone,
                        mobilephone=mobilephone, secondaryphone=secondaryphone, fax=fax)
-

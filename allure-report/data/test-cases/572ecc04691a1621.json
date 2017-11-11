@@ -1,0 +1,75 @@
+{
+  "uid" : "572ecc04691a1621",
+  "name" : "test_add_group[None:name<\". ~S :headerVR6;C>Ocjk:footer <_  q6?s]9 R_^ DK]",
+  "fullName" : "test.test_add_group.test_add_group[None:name<\". ~S :headerVR6;C>Ocjk:footer <_  q6?s]9 R_^ DK]",
+  "historyId" : "2c7c58df068c831f6ef9360cbf7c06a",
+  "time" : {
+    "start" : 1510387107318,
+    "stop" : 1510387110514,
+    "duration" : 3196
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusDetails" : {
+    "message" : "AssertionError: assert [97:name^F7GO...6H* G]#f, ...] == [97:name^F7GO`...6H* G]#f, ...]\n  At index 54 diff: None:name<\"/ ~S :headerVR6;C>Ocjk:footer <_  q6?s]9 R_^ DK != 157:name:headerVR6;C>Ocjk:footer <_  q6?s]9 R_^ DK\n  Use -v to get the full diff",
+    "trace" : "app = <fixture.application.Application object at 0x03F42150>\ndb = <fixture.db.DbFixture object at 0x03F47430>\njson_groups = None:name<\"/ ~S :headerVR6;C>Ocjk:footer <_  q6?s]9 R_^ DK\ncheck_ui = False\n\n    def test_add_group(app, db, json_groups, check_ui):\n        group = json_groups\n        old_groups = db.get_group_list()\n        app.group.create(group)\n        new_groups = db.get_group_list()\n        old_groups.append(group)\n>       assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)\nE       assert [97:name^F7GO...6H* G]#f, ...] == [97:name^F7GO`...6H* G]#f, ...]\nE         At index 54 diff: None:name<\"/ ~S :headerVR6;C>Ocjk:footer <_  q6?s]9 R_^ DK != 157:name:headerVR6;C>Ocjk:footer <_  q6?s]9 R_^ DK\nE         Use -v to get the full diff\n\ntest\\test_add_group.py:10: AssertionError",
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "VAIO"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "15940-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test.test_add_group"
+  }, {
+    "name" : "testClass",
+    "value" : "test.test_add_group"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_add_group[None:name<\". ~S :headerVR6;C>Ocjk:footer <_  q6?s]9 R_^ DK]"
+  }, {
+    "name" : "package",
+    "value" : "test.test_add_group"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "statusMessage" : {
+    "present" : true
+  },
+  "statusDetailsSafe" : {
+    "message" : "AssertionError: assert [97:name^F7GO...6H* G]#f, ...] == [97:name^F7GO`...6H* G]#f, ...]\n  At index 54 diff: None:name<\"/ ~S :headerVR6;C>Ocjk:footer <_  q6?s]9 R_^ DK != 157:name:headerVR6;C>Ocjk:footer <_  q6?s]9 R_^ DK\n  Use -v to get the full diff",
+    "trace" : "app = <fixture.application.Application object at 0x03F42150>\ndb = <fixture.db.DbFixture object at 0x03F47430>\njson_groups = None:name<\"/ ~S :headerVR6;C>Ocjk:footer <_  q6?s]9 R_^ DK\ncheck_ui = False\n\n    def test_add_group(app, db, json_groups, check_ui):\n        group = json_groups\n        old_groups = db.get_group_list()\n        app.group.create(group)\n        new_groups = db.get_group_list()\n        old_groups.append(group)\n>       assert sorted(old_groups, key=Group.id_or_max) == sorted(new_groups, key=Group.id_or_max)\nE       assert [97:name^F7GO...6H* G]#f, ...] == [97:name^F7GO`...6H* G]#f, ...]\nE         At index 54 diff: None:name<\"/ ~S :headerVR6;C>Ocjk:footer <_  q6?s]9 R_^ DK != 157:name:headerVR6;C>Ocjk:footer <_  q6?s]9 R_^ DK\nE         Use -v to get the full diff\n\ntest\\test_add_group.py:10: AssertionError",
+    "flaky" : false
+  },
+  "source" : "572ecc04691a1621.json",
+  "parameterValues" : [ ]
+}

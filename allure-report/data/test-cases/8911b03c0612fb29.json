@@ -1,0 +1,67 @@
+{
+  "uid" : "8911b03c0612fb29",
+  "name" : "test_add_group[None:namezG(OT:headerSIlS g nY4$rJ:footer..) .Y5#pX~]",
+  "fullName" : "test.test_add_group.test_add_group[None:namezG(OT:headerSIlS g nY4$rJ:footer..) .Y5#pX~]",
+  "historyId" : "49c0b6248355e9d075758728c470bc4f",
+  "time" : {
+    "start" : 1510387091691,
+    "stop" : 1510387094318,
+    "duration" : 2627
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "VAIO"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "15940-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test.test_add_group"
+  }, {
+    "name" : "testClass",
+    "value" : "test.test_add_group"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_add_group[None:namezG(OT:headerSIlS g nY4$rJ:footer..) .Y5#pX~]"
+  }, {
+    "name" : "package",
+    "value" : "test.test_add_group"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "source" : "8911b03c0612fb29.json",
+  "parameterValues" : [ ]
+}

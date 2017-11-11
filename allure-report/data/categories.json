@@ -1,0 +1,73 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert [97:name^F7GO...6H* G]#f, ...] == [97:name^F7GO`...6H* G]#f, ...]\n  At index 52 diff: None:name <:headerFQ*W>`rL4ViF.O:footerG <Si\\ W&Y 8XS0+, != 155:name :headerFQ*W>`rL4ViF.O:footerG <Si W&Y 8XS0+,\n  Use -v to get the full diff",
+      "children" : [ {
+        "name" : "test_add_group[None:name <:headerFQ*W>`rL4ViF.O:footerG <Si\\\\ W&Y 8XS0+,]",
+        "uid" : "2fb2de2ff1a2fb24",
+        "parentUid" : "525a5e34b36870e2e98ad0238f3a3064",
+        "status" : "failed",
+        "time" : {
+          "start" : 1510387098190,
+          "stop" : 1510387103521,
+          "duration" : 5331
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "525a5e34b36870e2e98ad0238f3a3064"
+    }, {
+      "name" : "AssertionError: assert [97:name^F7GO...6H* G]#f, ...] == [97:name^F7GO`...6H* G]#f, ...]\n  At index 54 diff: None:name<\"/ ~S :headerVR6;C>Ocjk:footer <_  q6?s]9 R_^ DK != 157:name:headerVR6;C>Ocjk:footer <_  q6?s]9 R_^ DK\n  Use -v to get the full diff",
+      "children" : [ {
+        "name" : "test_add_group[None:name<\". ~S :headerVR6;C>Ocjk:footer <_  q6?s]9 R_^ DK]",
+        "uid" : "572ecc04691a1621",
+        "parentUid" : "9771c35f7bc1563dbfe396b97973c452",
+        "status" : "failed",
+        "time" : {
+          "start" : 1510387107318,
+          "stop" : 1510387110514,
+          "duration" : 3196
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9771c35f7bc1563dbfe396b97973c452"
+    }, {
+      "name" : "AssertionError: assert [97:name^F7GO...6H* G]#f, ...] == [97:name^F7GO`...6H* G]#f, ...]\n  Left contains more items, first extra item: None:nameac[:headerBx:r3Q K+ 20'  O:footerw<_Y7IT.P41# OC0y7\n  Use -v to get the full diff",
+      "children" : [ {
+        "name" : "test_add_group[None:nameac[:headerBx:r3Q K+ 20'  O:footerw<_Y7IT.P41# OC0y7]",
+        "uid" : "e84af637363fb2c4",
+        "parentUid" : "af1d40f8946feaf59039a44a13553a67",
+        "status" : "failed",
+        "time" : {
+          "start" : 1510387113288,
+          "stop" : 1510387116185,
+          "duration" : 2897
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "af1d40f8946feaf59039a44a13553a67"
+    }, {
+      "name" : "AssertionError: assert [97:name^F7GO...6H* G]#f, ...] == [97:name^F7GO`...6H* G]#f, ...]\n  Left contains more items, first extra item: None:name_,C :header6ac 3s' ~%sRMn;:footerMK:y lzIz]V\\m{gm\n  Use -v to get the full diff",
+      "children" : [ {
+        "name" : "test_add_group[None:name_,C :header6ac 3s' ~%sRMn;:footerMK:y lzIz]V\\\\m{gm]",
+        "uid" : "ba20f08c400dcf4b",
+        "parentUid" : "4f663b252b74c5dd5db64d2f54b20f82",
+        "status" : "failed",
+        "time" : {
+          "start" : 1510387116186,
+          "stop" : 1510387119153,
+          "duration" : 2967
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4f663b252b74c5dd5db64d2f54b20f82"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

@@ -4,141 +4,21 @@
   "children" : [ {
     "name" : "VAIO",
     "children" : [ {
-      "name" : "15940-MainThread",
+      "name" : "13604-MainThread",
       "children" : [ {
-        "name" : "test_add_group[None:name3iH$QLbIj:headerGcB4y!J!Db&Cjn:footerkqO-VV ]",
-        "uid" : "d17682747965a843",
-        "parentUid" : "d214ffc837b251d1afc6bac96a13c3bc",
+        "name" : "test_delete_any_group",
+        "uid" : "5563575f919a41c9",
+        "parentUid" : "fad97ce6c6cf617ca3b26ec85ccc804b",
         "status" : "passed",
         "time" : {
-          "start" : 1510387094320,
-          "stop" : 1510387098187,
-          "duration" : 3867
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_add_group[None:::]",
-        "uid" : "70fd3bb5eb9f6023",
-        "parentUid" : "d214ffc837b251d1afc6bac96a13c3bc",
-        "status" : "passed",
-        "time" : {
-          "start" : 1510387068313,
-          "stop" : 1510387089043,
-          "duration" : 20730
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_add_group[None:nameac[:headerBx:r3Q K+ 20'  O:footerw<_Y7IT.P41# OC0y7]",
-        "uid" : "e84af637363fb2c4",
-        "parentUid" : "d214ffc837b251d1afc6bac96a13c3bc",
-        "status" : "failed",
-        "time" : {
-          "start" : 1510387113288,
-          "stop" : 1510387116185,
-          "duration" : 2897
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_add_group[None:namek8mrPR%:header e:O,p4 lh0 :footerI 0xe1nut=U[0awFqh]",
-        "uid" : "c7facf5564325db1",
-        "parentUid" : "d214ffc837b251d1afc6bac96a13c3bc",
-        "status" : "passed",
-        "time" : {
-          "start" : 1510387103526,
-          "stop" : 1510387107316,
-          "duration" : 3790
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_add_group[None:name ba:headerp4XA yK:footerSfEN]P (sCO ]",
-        "uid" : "3da062c05a028120",
-        "parentUid" : "d214ffc837b251d1afc6bac96a13c3bc",
-        "status" : "passed",
-        "time" : {
-          "start" : 1510387110516,
-          "stop" : 1510387113286,
-          "duration" : 2770
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_add_group[None:namezG(OT:headerSIlS g nY4$rJ:footer..) .Y5#pX~]",
-        "uid" : "8911b03c0612fb29",
-        "parentUid" : "d214ffc837b251d1afc6bac96a13c3bc",
-        "status" : "passed",
-        "time" : {
-          "start" : 1510387091691,
-          "stop" : 1510387094318,
-          "duration" : 2627
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_add_group[None:name_,C :header6ac 3s' ~%sRMn;:footerMK:y lzIz]V\\\\m{gm]",
-        "uid" : "ba20f08c400dcf4b",
-        "parentUid" : "d214ffc837b251d1afc6bac96a13c3bc",
-        "status" : "failed",
-        "time" : {
-          "start" : 1510387116186,
-          "stop" : 1510387119153,
-          "duration" : 2967
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_add_group[None:name^F7GO`Y9:header&7Ui UG E:footer XV |=]",
-        "uid" : "3432ff9e3f1a89f6",
-        "parentUid" : "d214ffc837b251d1afc6bac96a13c3bc",
-        "status" : "passed",
-        "time" : {
-          "start" : 1510387089044,
-          "stop" : 1510387091690,
-          "duration" : 2646
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_add_group[None:nameU (7PvX9::header{f:footer 9m6H* G]#f]",
-        "uid" : "5cba053586f8b6e0",
-        "parentUid" : "d214ffc837b251d1afc6bac96a13c3bc",
-        "status" : "passed",
-        "time" : {
-          "start" : 1510387119156,
-          "stop" : 1510387122239,
-          "duration" : 3083
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_add_group[None:name<\". ~S :headerVR6;C>Ocjk:footer <_  q6?s]9 R_^ DK]",
-        "uid" : "572ecc04691a1621",
-        "parentUid" : "d214ffc837b251d1afc6bac96a13c3bc",
-        "status" : "failed",
-        "time" : {
-          "start" : 1510387107318,
-          "stop" : 1510387110514,
-          "duration" : 3196
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "test_add_group[None:name <:headerFQ*W>`rL4ViF.O:footerG <Si\\\\ W&Y 8XS0+,]",
-        "uid" : "2fb2de2ff1a2fb24",
-        "parentUid" : "d214ffc837b251d1afc6bac96a13c3bc",
-        "status" : "failed",
-        "time" : {
-          "start" : 1510387098190,
-          "stop" : 1510387103521,
-          "duration" : 5331
+          "start" : 1510411363194,
+          "stop" : 1510411380288,
+          "duration" : 17094
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "d214ffc837b251d1afc6bac96a13c3bc"
+      "uid" : "fad97ce6c6cf617ca3b26ec85ccc804b"
     } ],
     "uid" : "4e1210d772be8550aa874b6acf9f4189"
   } ]

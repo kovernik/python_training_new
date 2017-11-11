@@ -1,0 +1,37 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1510411363194" stop="1510411380288">
+  <name>test.test_delete_any_group</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1510411363194" status="passed" stop="1510411380288">
+      <name>test_delete_any_group</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="13604-MainThread"/>
+        <label name="host" value="VAIO"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1510411378975" status="passed" stop="1510411378975">
+          <name>Given a random group from the list</name>
+          <title>Given a random group from the list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1510411378975" status="passed" stop="1510411380281">
+          <name>When I delete the group 107:namezG(OT:headerSIlS g nY4$rJ:footer./) .Y5#pX~ from the list</name>
+          <title>When I delete the group 107:namezG(OT:headerSIlS g nY4$rJ:footer./) .Y5#pX~ from the list</title>
+          <attachments/>
+          <steps/>
+        </step>
+        <step start="1510411380281" status="passed" stop="1510411380288">
+          <name>Then the new group list is equal to the old list without the deleted group</name>
+          <title>Then the new group list is equal to the old list without the deleted group</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

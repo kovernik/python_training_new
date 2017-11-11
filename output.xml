@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Python 3.6.2 on win32)" generated="20171111 18:52:17.829">
+<suite id="s1" name="Group Scenarios" source="C:\Users\Mihail\Documents\GitHub\python_training_new\rf\group_scenarios.robot">
+<test id="s1-t1" name="Add new group">
+<kw name="Create Group name1 header1 footer1">
+<msg timestamp="20171111 18:52:17.877" level="FAIL">No keyword with name 'Create Group name1 header1 footer1' found.</msg>
+<status status="FAIL" starttime="20171111 18:52:17.876" endtime="20171111 18:52:17.877"></status>
+</kw>
+<status status="FAIL" starttime="20171111 18:52:17.873" endtime="20171111 18:52:17.877" critical="yes">No keyword with name 'Create Group name1 header1 footer1' found.</status>
+</test>
+<status status="FAIL" starttime="20171111 18:52:17.836" endtime="20171111 18:52:17.879"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Group Scenarios">Group Scenarios</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20171111 18:52:17.821" level="ERROR">Error in file 'C:\Users\Mihail\Documents\GitHub\python_training_new\rf\group_scenarios.robot': Non-existing setting 'Library rf.AddressBook'.</msg>
+<msg timestamp="20171111 18:52:17.822" level="ERROR">Error in file 'C:\Users\Mihail\Documents\GitHub\python_training_new\rf\group_scenarios.robot': Non-existing setting 'Suite Setup Init Fixtures'.</msg>
+<msg timestamp="20171111 18:52:17.823" level="ERROR">Error in file 'C:\Users\Mihail\Documents\GitHub\python_training_new\rf\group_scenarios.robot': Non-existing setting 'Suite Teardown Destroy Fixrures'.</msg>
+</errors>
+</robot>
